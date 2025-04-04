@@ -5,7 +5,7 @@ import streamlit as st
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key=st.secrets["openai_api_key"],
 )
 
 def analyze_feedback(feedback_text):
